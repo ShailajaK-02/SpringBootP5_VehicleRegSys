@@ -18,6 +18,7 @@ public interface VehicleService
     //delete method added
     String deleteVehicle(int id);
 
+    //update method added
     Vehicle updateVehicle(int id, Vehicle newVeh);
     
 }
