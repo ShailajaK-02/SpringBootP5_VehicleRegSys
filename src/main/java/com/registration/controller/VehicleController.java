@@ -33,7 +33,7 @@ public class VehicleController
         return new ResponseEntity<>(vehicleList, HttpStatus.OK);
     }
 
-    //get data by id
+    //get data by id api
     @GetMapping("/getById/{id}")
     public ResponseEntity<Vehicle> getDataById(@PathVariable("id") int id){
         Vehicle vehicle = vehicleService.getDataById(id);
