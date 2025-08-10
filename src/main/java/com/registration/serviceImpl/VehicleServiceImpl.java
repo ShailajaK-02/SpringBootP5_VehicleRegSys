@@ -32,4 +32,20 @@ public class VehicleServiceImpl implements VehicleService
         Vehicle vehicleById = repository.findById(id).orElseThrow(()->new NullPointerException("Data not found"+id));
         return vehicleById;
     }
+
+    @Override
+    public String deleteVehicle(int id) {
+        repository.deleteById(id);
+        return "Data deleted";
+    }
+
+    @Override
+    public Vehicle updateVehicle(int id, Vehicle newVeh) {
+       Vehicle vehicle = repository.findById(id).orElseThrow(()->new NullPointerException("Data not found"));
+
+       vehicle.setVehicleNo(newVeh.getVehicleNo());
+
+       Vehicle updated = repository.save(vehicle);
+       return  updated;
+    }
 }
