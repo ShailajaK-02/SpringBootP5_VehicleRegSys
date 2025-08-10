@@ -47,7 +47,7 @@ public class VehicleController
         return new ResponseEntity<>("Deleted",HttpStatus.OK);
     }
 
-    //update
+    //update api
     @PutMapping("/update/{id}")
     public ResponseEntity<Vehicle> update(@PathVariable("id")int id,@RequestBody Vehicle vehicle){
         Vehicle updatedveh = vehicleService.updateVehicle(id,vehicle);
