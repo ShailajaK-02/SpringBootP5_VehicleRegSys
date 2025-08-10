@@ -22,6 +22,7 @@ public class VehicleServiceImpl implements VehicleService
         return "Vehicle added";
     }
 
+    //getalldata method implemented
     @Override
     public List<Vehicle> getAllData() {
         List<Vehicle> vehicleList = repository.findAll();
