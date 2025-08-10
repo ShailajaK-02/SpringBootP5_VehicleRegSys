@@ -40,7 +40,7 @@ public class VehicleController
         return new ResponseEntity<>(vehicle,HttpStatus.OK);
     }
 
-    //delete
+    //delete api
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<String> delete(@PathVariable("id")int id){
         vehicleService.deleteVehicle(id);
