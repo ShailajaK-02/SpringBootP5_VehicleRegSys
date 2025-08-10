@@ -9,6 +9,7 @@ public interface VehicleService
     //save method added
     String saveVehicle(Vehicle vehicle);
 
+    //getalldata method added
     List<Vehicle> getAllData();
 
     Vehicle getDataById(int id);
