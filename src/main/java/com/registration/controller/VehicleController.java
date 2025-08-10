@@ -18,7 +18,7 @@ public class VehicleController
     @Autowired
     private VehicleService vehicleService;
 
-    //add data
+    //add data api
     @PostMapping("/addVehicle")
     public ResponseEntity<String> addVehicle(@RequestBody Vehicle vehicle){
         System.err.println(vehicle);
