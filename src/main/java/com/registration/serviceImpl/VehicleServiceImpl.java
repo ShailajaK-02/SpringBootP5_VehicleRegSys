@@ -15,6 +15,7 @@ public class VehicleServiceImpl implements VehicleService
     @Autowired
     private VehicleRepository repository;
 
+    //addmethod implemented
     @Override
     public String saveVehicle(Vehicle vehicle) {
         repository.save(vehicle);
