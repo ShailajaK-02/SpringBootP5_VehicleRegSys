@@ -29,6 +29,7 @@ public class VehicleServiceImpl implements VehicleService
         return vehicleList;
     }
 
+    //getbyid implemented
     @Override
     public Vehicle getDataById(int id) {
         Vehicle vehicleById = repository.findById(id).orElseThrow(()->new NullPointerException("Data not found"+id));
