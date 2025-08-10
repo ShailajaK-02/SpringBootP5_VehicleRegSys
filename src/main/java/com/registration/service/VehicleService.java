@@ -12,6 +12,7 @@ public interface VehicleService
     //getalldata method added
     List<Vehicle> getAllData();
 
+    //getbyid method added
     Vehicle getDataById(int id);
 
     String deleteVehicle(int id);
