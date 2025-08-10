@@ -43,6 +43,7 @@ public class VehicleServiceImpl implements VehicleService
         return "Data deleted";
     }
 
+    //update method added
     @Override
     public Vehicle updateVehicle(int id, Vehicle newVeh) {
        Vehicle vehicle = repository.findById(id).orElseThrow(()->new NullPointerException("Data not found"));
