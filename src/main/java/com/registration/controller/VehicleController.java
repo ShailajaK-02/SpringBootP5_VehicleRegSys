@@ -26,7 +26,7 @@ public class VehicleController
         return new ResponseEntity<>("Vehicle added", HttpStatus.CREATED);
     }
 
-    //get all data
+    //getalldata api
     @GetMapping("/getAllData")
     public ResponseEntity<List<Vehicle>> getAllData(){
         List<Vehicle> vehicleList = vehicleService.getAllData();
