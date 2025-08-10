@@ -36,6 +36,7 @@ public class VehicleServiceImpl implements VehicleService
         return vehicleById;
     }
 
+    //delete implemented
     @Override
     public String deleteVehicle(int id) {
         repository.deleteById(id);
